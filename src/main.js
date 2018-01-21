@@ -3,12 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false
-
-import 'spectre.css/dist/spectre.css'
-import 'spectre.css/dist/spectre-exp.css'
-import 'spectre.css/dist/spectre-icons.css'
 
 /* eslint-disable no-new */
 new Vue({
