@@ -2,6 +2,28 @@
 
 > confluent kafka manager
 
+## Install confluent Kafka
+
+- Download Confluent Kafka
+
+  [https://www.confluent.io/download/](https://www.confluent.io/download/)
+
+- Start Confluent Kafka
+
+  ``` bash
+  > bin/confluent start
+
+  ```
+- Services
+
+| Component | Port |
+|-----------|------|
+|Apache Kafka brokers (plain text)           |9092      |
+|Kafka Connect REST API           |8083      |
+|REST Proxy           |8082      |
+|Schema Registry REST API           |8081      |
+|ZooKeeper           |2181      |
+
 ## Build Setup
 
 ``` bash
