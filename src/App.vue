@@ -21,9 +21,9 @@
 </template>
 
 <script>
-import AppHeader from '@/components/Header'
-import SideNav from '@/components/SideNav'
-import AppContent from '@/components/AppContent'
+import AppHeader from '@/components/layout/Header'
+import SideNav from '@/components/layout/Sidebar'
+import AppContent from '@/components/layout/Main'
 
 export default {
   name: 'App',
