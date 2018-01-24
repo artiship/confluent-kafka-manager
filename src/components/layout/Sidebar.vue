@@ -3,25 +3,25 @@
    <div class="sidebar-sticky">
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link active" href="#">
+        <a class="nav-link active" href="/">
           <span data-feather="home"></span>
           Dashboard <span class="sr-only">(current)</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/topic">
           <span data-feather="file"></span>
           Topic
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/schema">
           <span data-feather="shopping-cart"></span>
           Schema
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="/connect">
           <span data-feather="users"></span>
           Connect
         </a>
