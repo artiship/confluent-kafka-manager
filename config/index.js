@@ -16,18 +16,21 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {
           '^/api/schema': ''
+        }
       },
       '/api/kafka': {
         target: 'http://127.0.0.1:8082',
         changeOrigin: true,
         pathRewrite: {
           '^/api/kafka': ''
+        }
       },
       '/api/connect': {
         target: 'http://127.0.0.1:8083',
         changeOrigin: true,
         pathRewrite: {
           '^/api/connect': ''
+        }
       },
     },
 

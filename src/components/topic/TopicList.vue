@@ -12,7 +12,7 @@ export default {
     ...mapGetters([
       'topics'
     ])
-  }
+  },
   mounted: function() {
     this.$store.dispath('getTopics')
   }

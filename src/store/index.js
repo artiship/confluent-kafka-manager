@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-import topicList from './modules/topic/topic-list'
+import topicStore from './modules/topic/topicStore'
 
 const state = {
   requesting: false,
@@ -19,6 +19,6 @@ export default new Vuex.Store({
   state,
   getters,
   modules: {
-    topicList
+    topicStore
   }
 })
