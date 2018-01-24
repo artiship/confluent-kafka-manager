@@ -12,7 +12,7 @@ const getters = {
 const mutations = {
 	[TYPE.TOPIC_LIST_REQUEST] (state) {
 	},
-	[TYPE.TOPIC_LIST_SUCCESS] (state, topiclist) {
+	[TYPE.TOPIC_LIST_SUCCESS] (state, topicList) {
 		state.topicList = topicList
 	},
 	[TYPE.TOPIC_LIST_FAILURE] (state) {
@@ -25,10 +25,13 @@ const actions = {
 		rootState.requesting = true
 		commit(TYPE.TOPIC_LIST_REQUEST)
 
-		kafkaApi.getTopics().then((response) => {
+		kafkaApi.getTopics().then(({data}) => {
 			rootState.requesting = false
-			commit(TYPE.TOPIC_LIST_SUCCESS, response.data)
-		}, (error) => {
+
+      let topics = data.map(i => ({'topicName': i}))
+			commit(TYPE.TOPIC_LIST_SUCCESS, topics)
+		})
+    .catch((error) => {
 			rootState.requesting = false
 			commit(TYPE.TOPIC_LIST_FAILURE)
 		})

@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    <b-table striped hover :items="topics"></b-table>
+    <b-table striped hover :items="topicList"></b-table>
   </div>
 </template>
 
@@ -10,11 +10,11 @@ import {mapGetters, mapActions} from 'vuex'
 export default {
   computed: {
     ...mapGetters([
-      'topics'
+      'topicList'
     ])
   },
   mounted: function() {
-    this.$store.dispath('getTopics')
+    this.$store.dispatch('getTopicList')
   }
 }
 </script>
