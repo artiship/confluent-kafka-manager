@@ -3,6 +3,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue'
+import featherMixin from '@/mixins/featherMixin'
 
 Vue.use(BootstrapVue)
 
@@ -14,6 +15,9 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  mixins: [
+    featherMixin
+  ],
   router,
   store,
   components: { App },
