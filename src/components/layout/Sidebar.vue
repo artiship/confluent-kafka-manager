@@ -1,19 +1,14 @@
 <template lang="html">
-  <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+  <b-nav class="col-md-2 d-none d-md-block bg-light sidebar">
    <div class="sidebar-sticky">
     <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="/">
-          <span data-feather="home"></span>
-          Dashboard <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/topic">
-          <span data-feather="file"></span>
-          Topic
-        </a>
-      </li>
+      <b-nav-item active>
+        Active
+      </b-nav-item>
+      <b-nav-item active>
+        <span data-feather="file"></span>
+        Topic
+      </b-nav-item>
       <li class="nav-item">
         <a class="nav-link" href="/schema">
           <span data-feather="shopping-cart"></span>
@@ -43,11 +38,13 @@
       </li>
     </ul>
   </div>
-  </nav>
+</b-nav>
 </template>
 
 <script>
+
 export default {
+  name:'sidebar'
 }
 </script>
 
